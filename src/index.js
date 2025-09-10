@@ -4,5 +4,19 @@ const player1 = {
     MANOBRABILIDADE: 3,
     PODER: 3,
     PONTOS:0,
-
 }
+ const player2 = {
+    NOME: "luigi",
+    VELOCIDADE: 3,
+    MANOBRABILIDADE: 4,
+    PODER: 4,
+    PONTOS:0,
+ }
+ async function rollDice(){
+ return Math.floor(Math.random() * 6  ) + 1;
+} 
+
+
+(async function  main(){
+    console.log(`🏁🚨 Corrida entre ${player1.NOME} e ${player2.NOME}  Começando... \n`)
+})();
